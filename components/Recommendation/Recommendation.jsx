@@ -21,7 +21,7 @@ const Recommendation = memo(({ author, data }) => {
         }
     }, [data])
     return (
-        <div className='h-screen || pt-16 || pb-5|| editScroll || items-center  || overflow-y-scroll || pr-5'>
+        <div className='h-screen || pt-16 || pb-5 || editScroll || items-center  || overflow-y-scroll || pr-5'>
             <div>
                 <button className={style.unlimited}>Get unlimited access</button>
                 <div className={style.searchBar}>
