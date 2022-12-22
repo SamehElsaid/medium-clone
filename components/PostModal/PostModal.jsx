@@ -83,10 +83,6 @@ const postModal = memo(() => {
                             e.target.file.value = ""
                             e.target.btn.removeAttribute('disabled');
                             textControl.current.style.display = "none"
-
-                            setTimeout(()=>{
-                            window.location.reload();
-                            }, 500)
                         })
                 }
             );
