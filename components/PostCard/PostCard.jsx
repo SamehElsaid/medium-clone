@@ -20,8 +20,8 @@ const PostCard = memo(({ data }) => {
     }, [])
     return (
         <Link href={`/post/${data.id}`}>
-            <div className='flex items-center py-5'>
-                <div className="pr-4 w-[70%]">
+            <div className='flex items-center gap-y-5 py-5 flex-wrap'>
+                <div className="pr-4 w-[100%] md:w-[60%]">
                     <div className={style.profileContainer}>
                         {authorData &&
                             <>
@@ -42,11 +42,11 @@ const PostCard = memo(({ data }) => {
                             {new Date(data.timestamp).toLocaleString("en-US", {
                                 day: "numeric",
                                 month: "short"
-                            })} * {data.postLength} min read <span className='bg-[#f2f2f2] | px-2 | py-1 || capitalize | rounded-full'>{data.category}</span></p>
+                            })}  <span className='bg-[#f2f2f2] | px-2 | py-1 || capitalize | rounded-full'>{data.category}</span></p>
                         <p><BsBookmarkPlus className='text-2xl cursor-pointer' /></p>
                     </div>
                 </div>
-                <div className=" object-cover w-[250px] relative h-[150px]">
+                <div className=" object-cover w-[100%] md:w-[35%] relative h-[150px]">
 
                     <Image height={1000} width={1000} loading="lazy" sizes='100%'  className="object-cover object-center w-full h-full" src={data.bannerImg} alt="s" />
                 </div>

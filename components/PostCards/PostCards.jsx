@@ -7,12 +7,12 @@ const PostCards = memo(() => {
     return (
         <div className={mainStyle.containerEdit}>
             <div className="flex gap-10 ">
-                <div className="w-[65%]">
+                <div className="w-[100%] lg:w-[65%]">
                     `{postData && postData.map(post=>(
                         <PostCard key={post.id} data={post}/>
                     ))}`
                 </div>
-                <div className="w-[35%]">
+                <div className="w-[0%] lg:w-[35%]">
                 </div>
             </div>
         </div>
